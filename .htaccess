@@ -1,0 +1,10 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Stop processing if the request is already inside the public/ folder
+    RewriteRule ^public/ - [L]
+
+    # Route everything else to public/index.php
+    RewriteRule ^ public/index.php [L]
+
+</IfModule>
