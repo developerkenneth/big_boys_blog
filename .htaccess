@@ -4,7 +4,7 @@
     # Stop processing if the request is already inside the public/ folder
     RewriteRule ^public/ - [L]
 
-    # Route everything else to public/index.php
+    # Route everything else to public/index.php; it sets the router base to the project root.
     RewriteRule ^ public/index.php [L]
 
 </IfModule>
