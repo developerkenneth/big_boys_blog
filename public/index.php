@@ -20,6 +20,7 @@ $router->get('/', 'App\Controller\BlogController@index');
 
 // api blog route
 $router->get('/api/blogs/', 'App\Controller\Api\ApiBlogController@index');
+$router->post('/api/blogs/', 'App\Controller\Api\ApiBlogController@store');
 
 
 // Run router
